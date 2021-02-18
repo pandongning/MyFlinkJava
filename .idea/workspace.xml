@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="19487e64-e764-42fe-bead-11149cd09ab4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="FlinkTutorial" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/mySoft/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="C:\Users\pdn\mySoft\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1oO3zy4MFJmlu5h2txrVjMYdiox" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/mySoft/flink-release-1.10" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager" selected="Application.TableTest5_TimeAndWindow">
+    <configuration name="TableTest2_CommonApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.apitest.tableapi.TableTest2_CommonApi" />
+      <module name="FlinkTutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.apitest.tableapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TableTest3_FileOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.apitest.tableapi.TableTest3_FileOutput" />
+      <module name="FlinkTutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.apitest.tableapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TableTest5_TimeAndWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.apitest.tableapi.TableTest5_TimeAndWindow" />
+      <module name="FlinkTutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.apitest.tableapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TableTest5_TimeAndWindow" />
+        <item itemvalue="Application.TableTest3_FileOutput" />
+        <item itemvalue="Application.TableTest2_CommonApi" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="19487e64-e764-42fe-bead-11149cd09ab4" name="Default Changelist" comment="" />
+      <created>1613144075810</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613144075810</updated>
+      <workItem from="1613144081701" duration="981000" />
+      <workItem from="1613183369509" duration="10250000" />
+      <workItem from="1613271952999" duration="9022000" />
+      <workItem from="1613319240609" duration="37000" />
+      <workItem from="1613365525004" duration="9952000" />
+      <workItem from="1613441125745" duration="4270000" />
+      <workItem from="1613485745710" duration="3782000" />
+      <workItem from="1613494397373" duration="189000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="61" y="257" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1613215110065">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="61" y="257" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.689@0.0.1280.689" timestamp="1613215110065" />
+    <state x="330" y="0" key="DetectedRootsChooserDialog" timestamp="1613395149011">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="330" y="0" key="DetectedRootsChooserDialog/0.0.1280.689@0.0.1280.689" timestamp="1613395149011" />
+    <state x="93" y="93" width="1095" height="504" key="DiffContextDialog" timestamp="1613319278139">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="93" y="93" width="1095" height="504" key="DiffContextDialog/0.0.1280.689@0.0.1280.689" timestamp="1613319278139" />
+    <state x="255" y="51" key="FileChooserDialogImpl" timestamp="1613395148174">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="255" y="51" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1613395148174" />
+    <state width="1227" height="248" key="GridCell.Tab.0.bottom" timestamp="1613402648431">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1227" height="248" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1613402648431" />
+    <state width="1227" height="248" key="GridCell.Tab.0.center" timestamp="1613402648431">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1227" height="248" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1613402648431" />
+    <state width="1227" height="248" key="GridCell.Tab.0.left" timestamp="1613402648431">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1227" height="248" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1613402648431" />
+    <state width="1227" height="248" key="GridCell.Tab.0.right" timestamp="1613402648431">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1227" height="248" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1613402648431" />
+    <state x="19" y="0" key="SettingsEditor" timestamp="1613144154651">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="19" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1613144154651" />
+    <state x="295" y="24" width="723" height="655" key="StructurePopup" timestamp="1613494538546">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="295" y="24" width="723" height="655" key="StructurePopup/0.0.1280.689@0.0.1280.689" timestamp="1613494538546" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1613485748886">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1613485748886" />
+    <state width="750" height="530" key="javadoc.popup" timestamp="1613272043041">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="750" height="530" key="javadoc.popup/0.0.1280.689@0.0.1280.689" timestamp="1613272043041" />
+    <state x="219" y="0" width="840" height="687" key="search.everywhere.popup" timestamp="1613398833558">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="219" y="0" width="840" height="687" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1613398833558" />
+  </component>
+</project>
