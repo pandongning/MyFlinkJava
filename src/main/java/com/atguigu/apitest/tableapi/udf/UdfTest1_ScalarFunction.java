@@ -37,6 +37,7 @@ public class UdfTest1_ScalarFunction {
         // 4. 自定义标量函数，实现求id的hash值
         // 4.1 table API
         HashCode hashCode = new HashCode(23);
+
         // 需要在环境中注册UDF
         tableEnv.registerFunction("hashCode", hashCode);
         Table resultTable = sensorTable.select("id, ts, hashCode(id)");

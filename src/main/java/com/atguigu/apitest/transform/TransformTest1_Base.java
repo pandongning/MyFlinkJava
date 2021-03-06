@@ -1,12 +1,4 @@
-package com.atguigu.apitest.transform;/**
- * Copyright (c) 2018-2028 尚硅谷 All Rights Reserved
- * <p>
- * Project: FlinkTutorial
- * Package: com.atguigu.apitest.transform
- * Version: 1.0
- * <p>
- * Created by wushengran on 2020/11/7 14:28
- */
+package com.atguigu.apitest.transform;
 
 import org.apache.flink.api.common.functions.FilterFunction;
 import org.apache.flink.api.common.functions.FlatMapFunction;
@@ -18,11 +10,11 @@ import org.apache.flink.util.Collector;
 /**
  * @ClassName: TransformTest1_Base
  * @Description:
- * @Author: wushengran on 2020/11/7 14:28
+ * @Author: pdn on 2020/11/7 14:28
  * @Version: 1.0
  */
 public class TransformTest1_Base {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.setParallelism(1);
 
@@ -42,7 +34,7 @@ public class TransformTest1_Base {
             @Override
             public void flatMap(String value, Collector<String> out) throws Exception {
                 String[] fields = value.split(",");
-                for( String field: fields )
+                for (String field : fields)
                     out.collect(field);
             }
         });

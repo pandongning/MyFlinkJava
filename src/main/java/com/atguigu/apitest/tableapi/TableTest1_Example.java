@@ -11,11 +11,11 @@ import org.apache.flink.types.Row;
 /**
  * @ClassName: TableTest1_Example
  * @Description:
- * @Author: wushengran on 2020/11/13 9:40
+ * @Author: pdn on 2020/11/13 9:40
  * @Version: 1.0
  */
 public class TableTest1_Example {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.setParallelism(1);
 
@@ -41,6 +41,7 @@ public class TableTest1_Example {
         // 6. 执行SQL
         tableEnv.createTemporaryView("sensor", dataTable);
         String sql = "select id, temperature from sensor where id = 'sensor_1'";
+//        仍然返回得是Table对象
         Table resultSqlTable = tableEnv.sqlQuery(sql);
 
         tableEnv.toAppendStream(resultTable, Row.class).print("result");

@@ -63,6 +63,7 @@ public class TableTest5_TimeAndWindow {
          * sensor_7,1547718202,6.7,2021-02-15 14:59:12.677
          */
 
+
         //eventTime版本1
 //        Table dataTableEventTime = tableEnv.fromDataStream(dataStream, "id, timestamp.rowtime, temperature as temp");
 //        dataTableEventTime.printSchema();
@@ -95,7 +96,7 @@ public class TableTest5_TimeAndWindow {
          */
 //        tableEnv.toAppendStream(dataTableEventTime, Row.class).print();
         /**
-         * 可以看出最后的一个字段rt就是timestamp对应的时间
+         * 可以看出最后的一个字段rt就是timestamp对应的时间字段。此时的好处就是既可以保留timestamp还可以使用新的时间字段
          * sensor_1,1547718199,35.8,2019-01-17 09:43:19.0
          * sensor_6,1547718201,15.4,2019-01-17 09:43:21.0
          * sensor_7,1547718202,6.7,2019-01-17 09:43:22.0

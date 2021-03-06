@@ -19,7 +19,7 @@ import org.apache.flink.types.Row;
 /**
  * @ClassName: TableTest2_CommonApi
  * @Description:
- * @Author: wushengran on 2020/11/13 10:29
+ * @Author: pdn on 2020/11/13 10:29
  * @Version: 1.0
  */
 public class TableTest2_CommonApi {
@@ -35,6 +35,7 @@ public class TableTest2_CommonApi {
                 .useOldPlanner()
                 .inStreamingMode()
                 .build();
+
         StreamTableEnvironment oldStreamTableEnv = StreamTableEnvironment.create(env, oldStreamSettings);
 
         // 1.2 基于老版本planner的批处理
@@ -99,7 +100,7 @@ public class TableTest2_CommonApi {
          * 第一条sensor_1的数据sensor_1,1547718199,35.8到来的时候
          * 输出结果如下
          * sqlagg> (true,sensor_1,1,35.8)
-         * 第一条sensor_1的数据sensor_1,1547718207,36.3到来
+         * 第二条sensor_1的数据sensor_1,1547718207,36.3到来
          * 输出结果如下
          * 第一个false表示以前的结算结果。
          * 第二个true表示本次更新的结果

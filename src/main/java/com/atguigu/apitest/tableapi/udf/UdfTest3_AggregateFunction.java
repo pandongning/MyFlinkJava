@@ -64,6 +64,8 @@ public class UdfTest3_AggregateFunction {
      *
      * <T>   the type of the aggregation result
      * <ACC> the type of the aggregation accumulator.
+     * <p>
+     * Tuple2<Double, Integer>里面的double就是同一个传感器对应的温度值
      */
     public static class AvgTemp extends AggregateFunction<Double, Tuple2<Double, Integer>> {
         @Override
