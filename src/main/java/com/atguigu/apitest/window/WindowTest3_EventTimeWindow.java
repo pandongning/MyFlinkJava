@@ -1,6 +1,7 @@
 package com.atguigu.apitest.window;
 
 import com.atguigu.apitest.beans.SensorReading;
+import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
@@ -9,6 +10,8 @@ import org.apache.flink.streaming.api.functions.timestamps.AscendingTimestampExt
 import org.apache.flink.streaming.api.functions.timestamps.BoundedOutOfOrdernessTimestampExtractor;
 import org.apache.flink.streaming.api.windowing.time.Time;
 import org.apache.flink.util.OutputTag;
+
+import java.time.Duration;
 
 /**
  * @ClassName: WindowTest3_EventTimeWindow
@@ -39,12 +42,13 @@ public class WindowTest3_EventTimeWindow {
 //                    }
 //                })
                 // 乱序数据设置时间戳和watermark
-                .assignTimestampsAndWatermarks(new BoundedOutOfOrdernessTimestampExtractor<SensorReading>(Time.seconds(2)) {
-                    @Override
-                    public long extractTimestamp(SensorReading element) {
-                        return element.getTimestamp() * 1000L;
-                    }
-                });
+//                .assignTimestampsAndWatermarks(new BoundedOutOfOrdernessTimestampExtractor<SensorReading>(Time.seconds(2)) {
+//                    @Override
+//                    public long extractTimestamp(SensorReading element) {
+//                        return element.getTimestamp() * 1000L;
+//                    }
+//                });
+        .assignTimestampsAndWatermarks(WatermarkStrategy.forBoundedOutOfOrderness(Duration.ofSeconds(10)).withTimestampAssigner())
 
         OutputTag<SensorReading> outputTag = new OutputTag<SensorReading>("late") {
         };
