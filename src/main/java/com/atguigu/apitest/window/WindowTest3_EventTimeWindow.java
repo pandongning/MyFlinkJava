@@ -48,7 +48,9 @@ public class WindowTest3_EventTimeWindow {
 //                        return element.getTimestamp() * 1000L;
 //                    }
 //                });
-        .assignTimestampsAndWatermarks(WatermarkStrategy.forBoundedOutOfOrderness(Duration.ofSeconds(10)).withTimestampAssigner())
+                .assignTimestampsAndWatermarks(WatermarkStrategy.<SensorReading>forBoundedOutOfOrderness(Duration.ofSeconds(10))
+                        .withTimestampAssigner((event, timestamp) -> event.getTimestamp())
+                );
 
         OutputTag<SensorReading> outputTag = new OutputTag<SensorReading>("late") {
         };
