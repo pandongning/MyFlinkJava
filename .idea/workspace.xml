@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="19487e64-e764-42fe-bead-11149cd09ab4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/state/StateTest1_OperatorState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/state/StateTest1_OperatorState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/state/StateTest2_KeyedState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/state/StateTest2_KeyedState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/state/StateTest3_KeyedStateApplicationCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/state/StateTest3_KeyedStateApplicationCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/state/StateTest4_FaultTolerance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/state/StateTest4_FaultTolerance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/window/WindowTest3_EventTimeWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/window/WindowTest3_EventTimeWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,23 +22,16 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="FlinkTutorial" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="a7223690-12c5-43bb-b552-31b2a2e807c0" />
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$USER_HOME$/mySoft/apache-maven-3.6.3" />
+        <option name="mavenHome" value="C:\Users\pdn\mySoft\apache-maven-3.6.3" />
         <option name="userSettingsFile" value="C:\Users\pdn\mySoft\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
@@ -38,16 +40,16 @@
   <component name="ProjectId" id="1oO3zy4MFJmlu5h2txrVjMYdiox" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager" selected="Application.TableTest5_TimeAndWindow">
     <configuration name="TableTest2_CommonApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -89,6 +91,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.TableTest5_TimeAndWindow" />
@@ -97,6 +110,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -123,7 +137,16 @@
       <workItem from="1615184188774" duration="118000" />
       <workItem from="1615877512704" duration="803000" />
       <workItem from="1617024056589" duration="1526000" />
-      <workItem from="1617193761837" duration="3095000" />
+      <workItem from="1617193761837" duration="4453000" />
+      <workItem from="1617370847305" duration="4582000" />
+      <workItem from="1617419594637" duration="2922000" />
+      <workItem from="1617425199508" duration="51000" />
+      <workItem from="1617425267862" duration="2182000" />
+      <workItem from="1617427477183" duration="75000" />
+      <workItem from="1617427566710" duration="423000" />
+      <workItem from="1617497877891" duration="1766000" />
+      <workItem from="1617677628870" duration="37000" />
+      <workItem from="1618108138256" duration="1199000" />
     </task>
     <task id="LOCAL-00001" summary="添加参数">
       <created>1615031368272</created>
@@ -139,26 +162,38 @@
       <option name="project" value="LOCAL" />
       <updated>1617194227820</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="WatermarkStrategy1.11版本得">
+      <created>1617242888215</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617242888215</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加参数" />
     <MESSAGE value="WatermarkStrategy" />
-    <option name="LAST_COMMIT_MESSAGE" value="WatermarkStrategy" />
+    <MESSAGE value="WatermarkStrategy1.11版本得" />
+    <option name="LAST_COMMIT_MESSAGE" value="WatermarkStrategy1.11版本得" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="399" y="0" key="#com.intellij.ide.util.MemberChooser" timestamp="1617422871899">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="399" y="0" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1617422871899" />
     <state x="61" y="257" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1613215110065">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="61" y="257" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.689@0.0.1280.689" timestamp="1613215110065" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1617194226349">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1617242887244">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1617194226349" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1617242887244" />
     <state x="330" y="0" key="DetectedRootsChooserDialog" timestamp="1613395149011">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
@@ -187,18 +222,18 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1227" height="248" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1613402648431" />
-    <state x="19" y="0" key="SettingsEditor" timestamp="1613144154651">
+    <state x="19" y="0" key="SettingsEditor" timestamp="1617427761040">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="19" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1613144154651" />
+    <state x="19" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1617427761040" />
     <state x="295" y="24" width="723" height="655" key="StructurePopup" timestamp="1613494538546">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="295" y="24" width="723" height="655" key="StructurePopup/0.0.1280.689@0.0.1280.689" timestamp="1613494538546" />
-    <state width="659" height="498" key="SwitcherDM" timestamp="1615029770349">
+    <state width="659" height="498" key="SwitcherDM" timestamp="1617427667809">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="659" height="498" key="SwitcherDM/0.0.1280.689@0.0.1280.689" timestamp="1615029770349" />
+    <state width="659" height="498" key="SwitcherDM/0.0.1280.689@0.0.1280.689" timestamp="1617427667809" />
     <state x="133" y="13" key="Vcs.Push.Dialog.v2" timestamp="1615031375962">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
@@ -211,9 +246,9 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="750" height="530" key="javadoc.popup/0.0.1280.689@0.0.1280.689" timestamp="1613272043041" />
-    <state x="219" y="0" width="840" height="687" key="search.everywhere.popup" timestamp="1613398833558">
+    <state x="219" y="0" width="840" height="687" key="search.everywhere.popup" timestamp="1617427643699">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="219" y="0" width="840" height="687" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1613398833558" />
+    <state x="219" y="0" width="840" height="687" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1617427643699" />
   </component>
 </project>

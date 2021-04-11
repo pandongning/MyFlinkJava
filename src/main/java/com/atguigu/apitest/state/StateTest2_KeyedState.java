@@ -10,7 +10,7 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
 
 public class StateTest2_KeyedState {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.setParallelism(1);
 
@@ -26,15 +26,17 @@ public class StateTest2_KeyedState {
         // 定义一个有状态的map操作，统计当前sensor数据个数
         SingleOutputStreamOperator<Integer> resultStream = dataStream
                 .keyBy("id")
-                .map( new MyKeyCountMapper() );
+                .map(new MyKeyCountMapper());
 
         resultStream.print();
 
         env.execute();
     }
 
-    // 自定义RichMapFunction
-    public static class MyKeyCountMapper extends RichMapFunction<SensorReading, Integer>{
+    /**
+     * 自定义RichMapFunction
+     */
+    public static class MyKeyCountMapper extends RichMapFunction<SensorReading, Integer> {
         private ValueState<Integer> keyCountState;
 
         // 其它类型状态的声明
@@ -55,7 +57,7 @@ public class StateTest2_KeyedState {
         public Integer map(SensorReading value) throws Exception {
             // 其它状态API调用
             // list state
-            for(String str: myListState.get()){
+            for (String str : myListState.get()) {
                 System.out.println(str);
             }
             myListState.add("hello");

@@ -1,7 +1,7 @@
 package com.atguigu.apitest.window;
 
 import com.atguigu.apitest.beans.SensorReading;
-import org.apache.flink.api.common.eventtime.WatermarkStrategy;
+import org.apache.flink.api.common.eventtime.*;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
@@ -49,7 +49,10 @@ public class WindowTest3_EventTimeWindow {
 //                    }
 //                });
                 .assignTimestampsAndWatermarks(WatermarkStrategy.<SensorReading>forBoundedOutOfOrderness(Duration.ofSeconds(10))
-                        .withTimestampAssigner((event, timestamp) -> event.getTimestamp())
+                                .withTimestampAssigner((event, timestamp) -> event.getTimestamp())
+//                        如果数据源中的某一个分区分片在一段时间内未发送事件数据，则意味着 WatermarkGenerator 也不会获得任何新数据去生成 watermark。我们称这类数据源为空闲输入或空闲源。在这种情况下，当某些其他分区仍然发送事件数据的时候就会出现问题。由于下游算子 watermark 的计算方式是取所有不同的上游并行数据源 watermark 的最小值，则其 watermark 将不会发生变化。
+//                        为了解决这个问题，你可以使用 WatermarkStrategy 来检测空闲输入并将其标记为空闲状态。WatermarkStrategy 为此提供了一个工具接口：
+                                .withIdleness(Duration.ofSeconds(60))
                 );
 
         OutputTag<SensorReading> outputTag = new OutputTag<SensorReading>("late") {
@@ -66,5 +69,35 @@ public class WindowTest3_EventTimeWindow {
         minTempStream.getSideOutput(outputTag).print("late");
 
         env.execute();
+    }
+}
+
+class MyWatermarkStrategy implements WatermarkStrategy<SensorReading> {
+
+    @Override
+    public WatermarkGenerator<SensorReading> createWatermarkGenerator(WatermarkGeneratorSupplier.Context context) {
+        return new MyWatermarkGenerator();
+    }
+
+    @Override
+    public TimestampAssigner<SensorReading> createTimestampAssigner(TimestampAssignerSupplier.Context context) {
+        return null;
+    }
+}
+
+class MyWatermarkGenerator implements WatermarkGenerator<SensorReading> {
+
+    private final long maxOutOfOrderness = 3000L;
+    private long currentMaxTimestamp;
+
+    @Override
+    public void onEvent(SensorReading event, long eventTimestamp, WatermarkOutput output) {
+        currentMaxTimestamp = Math.max(currentMaxTimestamp, eventTimestamp);
+    }
+
+    @Override
+    public void onPeriodicEmit(WatermarkOutput output) {
+        Watermark watermark = new Watermark(currentMaxTimestamp - maxOutOfOrderness - 1);
+        output.emitWatermark(watermark);
     }
 }

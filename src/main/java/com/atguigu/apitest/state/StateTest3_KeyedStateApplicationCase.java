@@ -1,12 +1,4 @@
-package com.atguigu.apitest.state;/**
- * Copyright (c) 2018-2028 尚硅谷 All Rights Reserved
- * <p>
- * Project: FlinkTutorial
- * Package: com.atguigu.apitest.state
- * Version: 1.0
- * <p>
- * Created by wushengran on 2020/11/10 16:33
- */
+package com.atguigu.apitest.state;
 
 import com.atguigu.apitest.beans.SensorReading;
 import org.apache.flink.api.common.functions.FlatMapFunction;
@@ -24,11 +16,12 @@ import org.apache.flink.util.Collector;
 /**
  * @ClassName: StateTest3_KeyedStateApplicationCase
  * @Description:
- * @Author: wushengran on 2020/11/10 16:33
+ * @Author: pdn on 2020/11/10 16:33
  * @Version: 1.0
  */
 public class StateTest3_KeyedStateApplicationCase {
-    public static void main(String[] args) throws Exception{
+
+    public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.setParallelism(1);
 
@@ -50,8 +43,11 @@ public class StateTest3_KeyedStateApplicationCase {
         env.execute();
     }
 
-    // 实现自定义函数类
-    public static class TempChangeWarning extends RichFlatMapFunction<SensorReading, Tuple3<String, Double, Double>>{
+    /**
+     * 实现自定义函数类
+     * 此处使用RichFlatMapFunction的原因是对于
+     */
+    public static class TempChangeWarning extends RichFlatMapFunction<SensorReading, Tuple3<String, Double, Double>> {
         // 私有属性，温度跳变阈值
         private Double threshold;
 
@@ -59,7 +55,7 @@ public class StateTest3_KeyedStateApplicationCase {
             this.threshold = threshold;
         }
 
-        // 定义状态，保存上一次的温度值
+        // 定义状态，保存上一次的温度值。如果最开始没有上一次的温度，则此时的温度应该为0
         private ValueState<Double> lastTempState;
 
         @Override
@@ -73,10 +69,11 @@ public class StateTest3_KeyedStateApplicationCase {
             Double lastTemp = lastTempState.value();
 
             // 如果状态不为null，那么就判断两次温度差值
-            if( lastTemp != null ){
-                Double diff = Math.abs( value.getTemperature() - lastTemp );
-                if( diff >= threshold )
+            if (lastTemp != null) {
+                double diff = Math.abs(value.getTemperature() - lastTemp);
+                if (diff >= threshold) {
                     out.collect(new Tuple3<>(value.getId(), lastTemp, value.getTemperature()));
+                }
             }
 
             // 更新状态

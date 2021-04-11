@@ -21,7 +21,7 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 /**
  * @ClassName: StateTest4_FaultTolerance
  * @Description:
- * @Author: wushengran on 2020/11/11 9:30
+ * @Author: pdn on 2020/11/11 9:30
  * @Version: 1.0
  */
 public class StateTest4_FaultTolerance {

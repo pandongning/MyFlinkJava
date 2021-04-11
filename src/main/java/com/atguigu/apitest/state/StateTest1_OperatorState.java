@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * @ClassName: StateTest1_OperatorState
  * @Description:
- * @Author: wushengran on 2020/11/10 15:30
+ * @Author: pdn on 2020/11/10 15:30
  * @Version: 1.0
  */
 public class StateTest1_OperatorState {
@@ -46,7 +46,9 @@ public class StateTest1_OperatorState {
         env.execute();
     }
 
-    // 自定义MapFunction
+    /**
+     * 自定义MapFunction
+     */
     public static class MyCountMapper implements MapFunction<SensorReading, Integer>, ListCheckpointed<Integer> {
         // 定义一个本地变量，作为算子状态
         private Integer count = 0;
@@ -77,13 +79,15 @@ public class StateTest1_OperatorState {
          * 从检查点里面恢复出来被保存的状态
          * 因为一个算子可能会有多个子任务，所以此时会将多个子任务的状态发送进行恢复，
          * 所以下面的
+         *
          * @param state
          * @throws Exception
          */
         @Override
         public void restoreState(List<Integer> state) throws Exception {
-            for (Integer num : state)
+            for (Integer num : state) {
                 count += num;
+            }
         }
     }
 }
