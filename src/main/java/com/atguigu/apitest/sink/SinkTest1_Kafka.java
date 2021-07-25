@@ -1,4 +1,5 @@
 package com.atguigu.apitest.sink;
+
 import com.atguigu.apitest.beans.SensorReading;
 import org.apache.flink.api.common.serialization.SimpleStringSchema;
 import org.apache.flink.streaming.api.datastream.DataStream;
@@ -15,7 +16,7 @@ import java.util.Properties;
  * @Version: 1.0
  */
 public class SinkTest1_Kafka {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.setParallelism(1);
 
@@ -29,8 +30,8 @@ public class SinkTest1_Kafka {
         properties.setProperty("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         properties.setProperty("auto.offset.reset", "latest");
 
-        // 从文件读取数据
-        DataStream<String> inputStream = env.addSource( new FlinkKafkaConsumer011<String>("sensor", new SimpleStringSchema(), properties));
+        // 从kafka读取数据
+        DataStream<String> inputStream = env.addSource(new FlinkKafkaConsumer011<String>("sensor", new SimpleStringSchema(), properties));
 
         // 转换成SensorReading类型
         DataStream<String> dataStream = inputStream.map(line -> {
@@ -38,7 +39,7 @@ public class SinkTest1_Kafka {
             return new SensorReading(fields[0], new Long(fields[1]), new Double(fields[2])).toString();
         });
 
-        dataStream.addSink( new FlinkKafkaProducer011<String>("localhost:9092", "sinktest", new SimpleStringSchema()));
+        dataStream.addSink(new FlinkKafkaProducer011<String>("localhost:9092", "sinktest", new SimpleStringSchema()));
 
         env.execute();
     }

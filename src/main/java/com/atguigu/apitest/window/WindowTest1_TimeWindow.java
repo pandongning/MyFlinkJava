@@ -53,7 +53,7 @@ public class WindowTest1_TimeWindow {
 //                .countWindow(10, 2);
 //                .window(EventTimeSessionWindows.withGap(Time.minutes(1)));
 //                .window(TumblingProcessingTimeWindows.of(Time.seconds(15)))
-                .timeWindow(Time.seconds(15))
+                .timeWindow(Time.seconds(5))
                 .aggregate(new AggregateFunction<SensorReading, Integer, Integer>() {
                     @Override
                     public Integer createAccumulator() {
@@ -105,7 +105,8 @@ public class WindowTest1_TimeWindow {
 
         sumStream.getSideOutput(outputTag).print("late");
 
-        resultStream2.print();
+        resultStream.print();
+//        resultStream2.print();
 
 
         env.execute();

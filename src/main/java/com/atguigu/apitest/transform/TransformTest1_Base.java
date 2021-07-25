@@ -40,6 +40,11 @@ public class TransformTest1_Base {
         });
 
         // 3. filter, 筛选sensor_1开头的id对应的数据
+//        此处是lambd表达式，其和下面的写法是等价的
+//        DataStream<String> filterStream = inputStream.filter((FilterFunction<String>) value -> value.startsWith("sensor_1"));
+//         省略参数类型的lambd表达式
+//        inputStream.filter(sendor -> sendor.startsWith("sensor_1"));
+
         DataStream<String> filterStream = inputStream.filter(new FilterFunction<String>() {
             @Override
             public boolean filter(String value) throws Exception {

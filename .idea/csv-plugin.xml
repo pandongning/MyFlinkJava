@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CsvFileAttributes">
+    <option name="attributeMap">
+      <map>
+        <entry key="D:\mavenRepository\org\apache\flink\flink-streaming-java_2.12\1.11.1\flink-streaming-java_2.12-1.11.1-sources.jar!\org\apache\flink\streaming\api\environment\CheckpointConfig.java">
+          <value>
+            <Attribute>
+              <option name="separator" value="&#9;" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\main\java\com\atguigu\apitest\state\StateTest1_OperatorState.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

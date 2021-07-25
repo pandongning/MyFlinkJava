@@ -22,7 +22,7 @@ import java.util.Properties;
  * @Version: 1.0
  */
 public class SourceTest3_Kafka {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.setParallelism(1);
 
@@ -33,8 +33,16 @@ public class SourceTest3_Kafka {
         properties.setProperty("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         properties.setProperty("auto.offset.reset", "latest");
 
-        // 从文件读取数据
-        DataStream<String> dataStream = env.addSource( new FlinkKafkaConsumer011<String>("sensor", new SimpleStringSchema(), properties));
+        //泛型String表示kafka里面每条记录的类型
+//        为了实现有且仅有一次，则不能配置下面的代码
+//        properties.setProperty("auto.offset.reset", "latest")
+//        和properties.setProperty("enable.auto.commit",)
+//
+//        flink在实现一次仅有一次的时候，是将偏移量存储在checkPoint里面的，所以其不依赖kafka自己存储的偏移量。
+//        其不需要自动的提交。但是其也可以进行自动的提交。
+//
+//        提交到kafka里面的偏移量。则仅仅用于监控。
+        DataStream<String> dataStream = env.addSource(new FlinkKafkaConsumer011<String>("sensor", new SimpleStringSchema(), properties));
 
         // 打印输出
         dataStream.print();

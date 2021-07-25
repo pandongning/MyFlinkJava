@@ -3,7 +3,7 @@ package com.atguigu.apitest.tableapi;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.table.api.DataTypes;
 import org.apache.flink.table.api.Table;
-import org.apache.flink.table.api.java.StreamTableEnvironment;
+import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
 import org.apache.flink.table.descriptors.Csv;
 import org.apache.flink.table.descriptors.FileSystem;
 import org.apache.flink.table.descriptors.Schema;
@@ -67,10 +67,10 @@ public class TableTest3_FileOutput {
                 )
                 .createTemporaryTable("outputTable");
 
-//        resultTable.insertInto("outputTable");
+        resultTable.insertInto("outputTable");
 //        由于流式的聚合操作需要更新以前的结果，但是对于文件类型的sink，其只会追加，所以此时对于执行下面的操作，会爆出下面的错误提示
 //        AppendStreamTableSink requires that Table has only insert changes.
-//        aggTable.insertInto("outputTable");
+        aggTable.insertInto("outputTable");
 
         env.execute();
     }

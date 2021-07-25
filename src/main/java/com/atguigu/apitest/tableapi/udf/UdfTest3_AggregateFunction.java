@@ -6,7 +6,7 @@ import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.table.api.Table;
-import org.apache.flink.table.api.java.StreamTableEnvironment;
+import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
 import org.apache.flink.table.functions.AggregateFunction;
 import org.apache.flink.types.Row;
 
@@ -64,7 +64,6 @@ public class UdfTest3_AggregateFunction {
      *
      * <T>   the type of the aggregation result
      * <ACC> the type of the aggregation accumulator.
-     * <p>
      * Tuple2<Double, Integer>里面的double就是同一个传感器对应的温度值
      */
     public static class AvgTemp extends AggregateFunction<Double, Tuple2<Double, Integer>> {

@@ -31,6 +31,7 @@ public class TransformTest3_Reduce {
 
         // 分组
         KeyedStream<SensorReading, Tuple> keyedStream = dataStream.keyBy("id");
+//        KeyedStream<SensorReading, String> keyedStream = dataStream.keyBy(SensorReading::getId);
 
         // reduce聚合，取最大的温度值，以及当前最新的时间戳
         SingleOutputStreamOperator<SensorReading> resultStream = keyedStream.reduce(new ReduceFunction<SensorReading>() {

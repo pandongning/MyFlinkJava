@@ -66,6 +66,7 @@ public class TransformTest4_MultipleStreams {
             }
         });
 
+
         ConnectedStreams<Tuple2<String, Double>, SensorReading> connectedStreams = warningStream.connect(lowTempStream);
 
         DataStream<Object> resultStream = connectedStreams.map(new CoMapFunction<Tuple2<String, Double>, SensorReading, Object>() {

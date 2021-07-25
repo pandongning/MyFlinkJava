@@ -10,7 +10,8 @@ import org.apache.flink.streaming.api.windowing.time.Time;
 import org.apache.flink.table.api.Over;
 import org.apache.flink.table.api.Table;
 import org.apache.flink.table.api.Tumble;
-import org.apache.flink.table.api.java.StreamTableEnvironment;
+//import org.apache.flink.table.api.java.StreamTableEnvironment;
+import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
 import org.apache.flink.types.Row;
 
 /**
@@ -114,7 +115,7 @@ public class TableTest5_TimeAndWindow {
 
         // SQL 注意末尾需要一个空格second) "
         Table resultSqlTable = tableEnv.sqlQuery("select id, count(id) as cnt, avg(temp) as avgTemp, tumble_end(rt, interval '10' second) " +
-                "from sensor group by id, tumble(rt, interval '10' second)");
+                "from sensor group by id, tumble(rt, interval '10' second) ");
 
 
 //        tableEnv.toAppendStream(resultTable, Row.class).print("result");

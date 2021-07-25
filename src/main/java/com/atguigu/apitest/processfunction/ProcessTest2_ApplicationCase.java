@@ -1,12 +1,4 @@
-package com.atguigu.apitest.processfunction;/**
- * Copyright (c) 2018-2028 尚硅谷 All Rights Reserved
- * <p>
- * Project: FlinkTutorial
- * Package: com.atguigu.apitest.processfunction
- * Version: 1.0
- * <p>
- * Created by wushengran on 2020/11/11 10:54
- */
+package com.atguigu.apitest.processfunction;
 
 import com.atguigu.apitest.beans.SensorReading;
 import org.apache.flink.api.common.state.ValueState;
@@ -18,14 +10,10 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.KeyedProcessFunction;
 import org.apache.flink.util.Collector;
 
-/**
- * @ClassName: ProcessTest2_ApplicationCase
- * @Description:
- * @Author: wushengran on 2020/11/11 10:54
- * @Version: 1.0
- */
+
 public class ProcessTest2_ApplicationCase {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
+
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.setParallelism(1);
 
@@ -40,14 +28,14 @@ public class ProcessTest2_ApplicationCase {
 
         // 测试KeyedProcessFunction，先分组然后自定义处理
         dataStream.keyBy("id")
-                .process( new TempConsIncreWarning(10) )
+                .process(new TempConsIncreWarning(10))
                 .print();
 
         env.execute();
     }
 
     // 实现自定义处理函数，检测一段时间内的温度连续上升，输出报警
-    public static class TempConsIncreWarning extends KeyedProcessFunction<Tuple, SensorReading, String>{
+    public static class TempConsIncreWarning extends KeyedProcessFunction<Tuple, SensorReading, String> {
         // 定义私有属性，当前统计的时间间隔
         private Integer interval;
 
@@ -72,14 +60,14 @@ public class ProcessTest2_ApplicationCase {
             Long timerTs = timerTsState.value();
 
             // 如果温度上升并且没有定时器，注册10秒后的定时器，开始等待
-            if( value.getTemperature() > lastTemp && timerTs == null ){
+            if (value.getTemperature() > lastTemp && timerTs == null) {
                 // 计算出定时器时间戳
                 Long ts = ctx.timerService().currentProcessingTime() + interval * 1000L;
                 ctx.timerService().registerProcessingTimeTimer(ts);
                 timerTsState.update(ts);
             }
             // 如果温度下降，那么删除定时器
-            else if( value.getTemperature() < lastTemp && timerTs != null ){
+            else if (value.getTemperature() < lastTemp && timerTs != null) {
                 ctx.timerService().deleteProcessingTimeTimer(timerTs);
                 timerTsState.clear();
             }
