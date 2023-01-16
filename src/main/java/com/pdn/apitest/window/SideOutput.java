@@ -21,7 +21,7 @@ public class SideOutput {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = ExecutionEnvironmentUtils.getExecutionEnvironment();
 
-        FlinkKafkaConsumer011<String> stringFlinkKafkaConsumer011 = KafkaUtils.getFlinkKafkaConsumer011("AggregateFunctionDemo", "127.0.0.1:9094,127.0.0.1:9092,127.0.0.1:9093", "a");
+        FlinkKafkaConsumer011<String> stringFlinkKafkaConsumer011 = KafkaUtils.getFlinkKafkaConsumer011("SideOutput", "127.0.0.1:9094,127.0.0.1:9092,127.0.0.1:9093", "a");
         DataStream<String> inputStream = env.addSource(stringFlinkKafkaConsumer011);
 
         // 转换成SensorReading类型
@@ -35,7 +35,8 @@ public class SideOutput {
         final OutputTag<SensorReading> lateOutputTag = new OutputTag<SensorReading>("late-data"){};
 
         SingleOutputStreamOperator<Tuple3<SensorReading, String, Long>> reduce = dataStream
-                .assignTimestampsAndWatermarks(WatermarkStrategy.<SensorReading>forBoundedOutOfOrderness(Duration.ofSeconds(2))
+                .assignTimestampsAndWatermarks(
+                                 WatermarkStrategy.<SensorReading>forBoundedOutOfOrderness(Duration.ofSeconds(2))
                                 .withTimestampAssigner((event, timestamp) -> event.getTimestamp())
 //                        如果数据源中的某一个分区分片在一段时间内未发送事件数据，则意味着 WatermarkGenerator 也不会获得任何新数据去生成 watermark。
 //                        我们称这类数据源为空闲输入或空闲源。在这种情况下，当某些其他分区仍然发送事件数据的时候就会出现问题。
@@ -72,7 +73,7 @@ public class SideOutput {
          * reduce:2> (SensorReading{id='sensor_1', timestamp=1599990791000, temperature=1.0},1599990790000$$$1599990795000,1599990794999)
          * timestamp=1599990797000的时候，窗口的操作已经被触发，所以后面再输入timestamp=1599990791000的记录，则属于延迟的数据。
          * 输入延迟的数据。可以看见其「没有更新」以前窗口计算的结果。因为应超过了窗口的结束时间，窗口的元数据信息已经被删除呢
-         * 所以此处输出为不再触发窗口的操作。如果要触发操作，我猜测需要使用allowedLateness的语法
+         * 所以此处输出为不再触发窗口的操作。如果要触发操作，需要使用allowedLateness的语法。才可以更新之前输出的结果
          * in:3> SensorReading{id='sensor_1', timestamp=1599990791000, temperature=0.0}
          * late-data:2> SensorReading{id='sensor_1', timestamp=1599990791000, temperature=0.0}
          *  因为有侧输出流，所以任何时候延迟的数据都会被输出到侧流里面

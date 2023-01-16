@@ -5,154 +5,173 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19487e64-e764-42fe-bead-11149cd09ab4" name="Default Changelist" comment="WatermarkStrategy1.11版本得">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_82.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_31_1_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_flink_flink_clients_2_12_1_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_flink_flink_connector_base_1_16_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_flink_flink_connector_kafka_1_16_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_flink_flink_optimizer_2_12_1_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_flink_flink_runtime_web_2_12_1_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_flink_flink_shaded_force_shading_15_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_17_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_17_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_7_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/quchong/MapStateDistinctExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/quchong/RedisKeyDistinct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/utils/ExecutionEnvironmentUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/utils/KafkaUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/utils/RedisUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/window/AllowedLateness.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/window/SideOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/window/funcation/AggregateFunctionDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/window/funcation/ProcessWindowFunctionDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/window/funcation/ReduceProcessFuncation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pdn/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/常见的启动脚本.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_9_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_reload4j_reload4j_1_2_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_jaxrs_jackson_jaxrs_base_2_12_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_jaxrs_jackson_jaxrs_json_provider_2_12_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_12_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_5_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stephenc_jcip_jcip_annotations_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_re2j_re2j_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_55.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_nimbus_jose_jwt_9_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_json_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dnsjava_dnsjava_2_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_6_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_dns_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_haproxy_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_memcache_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_mqtt_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_redis_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_smtp_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_stomp_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_xml_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_classes_macos_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_native_macos_osx_aarch_64_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_native_macos_osx_x86_64_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_classes_epoll_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_classes_kqueue_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_4_1_42_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_aarch_64_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_kqueue_osx_aarch_64_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_kqueue_osx_x86_64_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_rxtx_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_sctp_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_udt_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_configuration2_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_4_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_4_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_4_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_annotations_3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_auth_3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_client_3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_common_3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_hdfs_3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_hdfs_client_3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_common_3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_core_3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_jobclient_3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_api_3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_client_3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_common_3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_thirdparty_hadoop_shaded_guava_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_thirdparty_hadoop_shaded_protobuf_3_7_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_admin_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_client_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_common_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_core_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_crypto_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_identity_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_server_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_simplekdc_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_util_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_asn1_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_config_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_pkix_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_util_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_xdr_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_token_provider_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_yetus_audience_annotations_0_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_jute_3_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_4_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_client_9_4_43_v20210629.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_43_v20210629.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_43_v20210629.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_4_43_v20210629.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_4_43_v20210629.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_4_43_v20210629.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_43_v20210629.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_ajax_9_4_43_v20210629.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_4_43_v20210629.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_4_43_v20210629.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_4_43_v20210629.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_4_43_v20210629.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_4_43_v20210629.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_leveldbjni_leveldbjni_all_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jline_jline_3_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_reload4j_1_7_36.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/connectstreams/ControlConnectedStreams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/hdfs/MakeDir.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pdn/flinktraing/beans/TaxiFare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pdn/flinktraing/hourlytips/HourlyTipsSolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pdn/flinktraing/hourlytips/HourlyTipsWindowAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_7_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_7_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_42.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_15.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_8_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_8_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_0_27_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_21.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_flink_flink_connector_base_1_16_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_flink_flink_connector_kafka_2_12_1_11_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_flink_flink_connector_kafka_1_16_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_flink_flink_shaded_force_shading_15_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_5_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_8_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_8_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_8_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlinkTutorial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FlinkTutorial.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/beans/SensorReading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/beans/SensorReading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/processfunction/ProcessTest1_KeyedProcessFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/processfunction/ProcessTest1_KeyedProcessFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/processfunction/ProcessTest2_ApplicationCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/processfunction/ProcessTest2_ApplicationCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/processfunction/ProcessTest3_SideOuptCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/processfunction/ProcessTest3_SideOuptCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/sink/SinkTest1_Kafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/sink/SinkTest1_Kafka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/sink/SinkTest2_Redis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/sink/SinkTest2_Redis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/sink/SinkTest3_Es.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/sink/SinkTest3_Es.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/sink/SinkTest4_Jdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/sink/SinkTest4_Jdbc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/source/SourceTest1_Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/source/SourceTest1_Collection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/source/SourceTest2_File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/source/SourceTest2_File.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/source/SourceTest3_Kafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/source/SourceTest3_Kafka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/source/SourceTest4_UDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/source/SourceTest4_UDF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/state/StateTest1_OperatorState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/state/StateTest1_OperatorState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/state/StateTest2_KeyedState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/state/StateTest2_KeyedState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/state/StateTest3_KeyedStateApplicationCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/state/StateTest3_KeyedStateApplicationCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/state/StateTest4_FaultTolerance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/state/StateTest4_FaultTolerance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/tableapi/TableTest1_Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/tableapi/TableTest1_Example.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/tableapi/TableTest2_CommonApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/tableapi/TableTest2_CommonApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/tableapi/TableTest3_FileOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/tableapi/TableTest3_FileOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/tableapi/TableTest4_KafkaPipeLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/tableapi/TableTest4_KafkaPipeLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/tableapi/TableTest5_TimeAndWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/tableapi/TableTest5_TimeAndWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/tableapi/udf/UdfTest1_ScalarFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/tableapi/udf/UdfTest1_ScalarFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/tableapi/udf/UdfTest2_TableFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/tableapi/udf/UdfTest2_TableFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/tableapi/udf/UdfTest3_AggregateFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/tableapi/udf/UdfTest3_AggregateFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/transform/TransformTest1_Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/transform/TransformTest1_Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/transform/TransformTest2_RollingAggregation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/transform/TransformTest2_RollingAggregation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/transform/TransformTest3_Reduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/transform/TransformTest3_Reduce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/transform/TransformTest4_MultipleStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/transform/TransformTest4_MultipleStreams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/transform/TransformTest5_RichFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/transform/TransformTest5_RichFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/transform/TransformTest6_Partition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/transform/TransformTest6_Partition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/window/WindowTest1_TimeWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/window/WindowTest1_TimeWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/window/WindowTest2_CountWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/window/WindowTest2_CountWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/apitest/window/WindowTest3_EventTimeWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/window/WindowTest3_EventTimeWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/wc/StreamWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/wc/StreamWordCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/wc/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/wc/WordCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hello.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hello.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/processfunction/ProcessTest2_ApplicationCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/processfunction/ProcessTest2_ApplicationCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/processfunction/ProcessTest3_SideOuptCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/processfunction/ProcessTest3_SideOuptCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/quchong/MapStateDistinctExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/quchong/MapStateDistinctExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/utils/ExecutionEnvironmentUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/utils/ExecutionEnvironmentUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/utils/KafkaUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/utils/KafkaUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/window/SideOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/apitest/window/SideOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pdn/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pdn/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties.bak" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/sensor.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sensor.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FlinkTutorial-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/FlinkTutorial-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/beans/SensorReading.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/processfunction/ProcessTest1_KeyedProcessFunction$MyProcess.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/processfunction/ProcessTest1_KeyedProcessFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/processfunction/ProcessTest2_ApplicationCase$TempConsIncreWarning.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/processfunction/ProcessTest2_ApplicationCase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/processfunction/ProcessTest3_SideOuptCase$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/processfunction/ProcessTest3_SideOuptCase$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/processfunction/ProcessTest3_SideOuptCase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/sink/SinkTest1_Kafka.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/sink/SinkTest2_Redis$MyRedisMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/sink/SinkTest2_Redis.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/sink/SinkTest3_Es$MyEsSinkFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/sink/SinkTest3_Es.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/sink/SinkTest4_Jdbc$MyJdbcSink.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/sink/SinkTest4_Jdbc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/source/SourceTest1_Collection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/source/SourceTest2_File.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/source/SourceTest3_Kafka.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/source/SourceTest4_UDF$MySensorSource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/source/SourceTest4_UDF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/state/StateTest1_OperatorState$MyCountMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/state/StateTest1_OperatorState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/state/StateTest2_KeyedState$MyKeyCountMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/state/StateTest2_KeyedState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/state/StateTest3_KeyedStateApplicationCase$TempChangeWarning.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/state/StateTest3_KeyedStateApplicationCase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/state/StateTest4_FaultTolerance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/tableapi/TableTest1_Example.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/tableapi/TableTest2_CommonApi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/tableapi/TableTest3_FileOutput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/tableapi/TableTest4_KafkaPipeLine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/tableapi/TableTest5_TimeAndWindow$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/tableapi/TableTest5_TimeAndWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/tableapi/udf/UdfTest1_ScalarFunction$HashCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/tableapi/udf/UdfTest1_ScalarFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/tableapi/udf/UdfTest2_TableFunction$Split.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/tableapi/udf/UdfTest2_TableFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/tableapi/udf/UdfTest3_AggregateFunction$AvgTemp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/tableapi/udf/UdfTest3_AggregateFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/transform/TransformTest1_Base$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/transform/TransformTest1_Base$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/transform/TransformTest1_Base$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/transform/TransformTest1_Base.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/transform/TransformTest2_RollingAggregation$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/transform/TransformTest2_RollingAggregation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/transform/TransformTest3_Reduce$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/transform/TransformTest3_Reduce.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/transform/TransformTest4_MultipleStreams$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/transform/TransformTest4_MultipleStreams$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/transform/TransformTest4_MultipleStreams$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/transform/TransformTest4_MultipleStreams.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/transform/TransformTest5_RichFunction$MyMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/transform/TransformTest5_RichFunction$MyMapper0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/transform/TransformTest5_RichFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/transform/TransformTest6_Partition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/window/WindowTest1_TimeWindow$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/window/WindowTest1_TimeWindow$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/window/WindowTest1_TimeWindow$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/window/WindowTest1_TimeWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/window/WindowTest2_CountWindow$MyAvgTemp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/window/WindowTest2_CountWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/window/WindowTest3_EventTimeWindow$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/apitest/window/WindowTest3_EventTimeWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/StreamWordCount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/WordCount$MyFlatMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/WordCount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/常见的启动脚本.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/常见的启动脚本.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FlinkTutorial-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties.bak" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/sensor.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sensor.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/常见的启动脚本.sh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/常见的启动脚本.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,21 +216,26 @@
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/zhihu/Desktop/project/myFlink/MyFlinkJava&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean package" />
+      <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.AllowedLateness">
-    <configuration name="AllowedLateness" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pdn.apitest.window.AllowedLateness" />
+  <component name="RunManager" selected="Application.HourlyTipsWindowAll">
+    <configuration name="ControlConnectedStreams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.pdn.apitest.connectstreams.ControlConnectedStreams" />
       <module name="FlinkTutorial" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pdn.apitest.window.*" />
+          <option name="PATTERN" value="com.pdn.apitest.connectstreams.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -219,12 +243,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProcessWindowFunctionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pdn.apitest.window.funcation.ProcessWindowFunctionDemo" />
+    <configuration name="HourlyTipsSolution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pdn.flinktraing.hourlytips.HourlyTipsSolution" />
       <module name="FlinkTutorial" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pdn.apitest.window.funcation.*" />
+          <option name="PATTERN" value="com.pdn.flinktraing.hourlytips.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -232,12 +256,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReduceProcessFuncation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pdn.apitest.window.funcation.ReduceProcessFuncation" />
+    <configuration name="HourlyTipsWindowAll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pdn.flinktraing.hourlytips.HourlyTipsWindowAll" />
       <module name="FlinkTutorial" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pdn.apitest.window.funcation.*" />
+          <option name="PATTERN" value="com.pdn.flinktraing.hourlytips.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -272,19 +296,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.AllowedLateness" />
-      <item itemvalue="Application.ProcessWindowFunctionDemo" />
-      <item itemvalue="Application.ReduceProcessFuncation" />
-      <item itemvalue="Application.SideOutput" />
+      <item itemvalue="Application.HourlyTipsSolution" />
+      <item itemvalue="Application.HourlyTipsWindowAll" />
       <item itemvalue="Application.test" />
+      <item itemvalue="Application.ControlConnectedStreams" />
+      <item itemvalue="Application.SideOutput" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AllowedLateness" />
-        <item itemvalue="Application.SideOutput" />
-        <item itemvalue="Application.ReduceProcessFuncation" />
+        <item itemvalue="Application.HourlyTipsWindowAll" />
         <item itemvalue="Application.test" />
-        <item itemvalue="Application.ProcessWindowFunctionDemo" />
+        <item itemvalue="Application.HourlyTipsSolution" />
+        <item itemvalue="Application.ControlConnectedStreams" />
+        <item itemvalue="Application.SideOutput" />
       </list>
     </recent_temporary>
   </component>
@@ -343,7 +367,12 @@
       <workItem from="1670083888020" duration="1544000" />
       <workItem from="1670466887213" duration="5080000" />
       <workItem from="1670555240240" duration="27784000" />
-      <workItem from="1670821277243" duration="4442000" />
+      <workItem from="1670821277243" duration="44036000" />
+      <workItem from="1672803440125" duration="2994000" />
+      <workItem from="1672820476177" duration="14000" />
+      <workItem from="1672821570813" duration="5686000" />
+      <workItem from="1673840941630" duration="3548000" />
+      <workItem from="1673854220398" duration="10494000" />
     </task>
     <task id="LOCAL-00001" summary="添加参数">
       <created>1615031368272</created>
@@ -399,5 +428,15 @@
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.apache.hadoop.net.ConnectTimeoutException" package="org.apache.hadoop.net" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

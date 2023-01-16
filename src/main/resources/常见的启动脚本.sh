@@ -5,7 +5,7 @@ kafka-topics.sh --bootstrap-server master:9093 --list
 kafka-topics.sh --bootstrap-server master:9092 --create --topic a --partitions 3 --replication-factor 2
 #发送消息
 kafka-console-producer.sh --bootstrap-server master:9093  --topic a
-kafka-console-producer.sh --bootstrap-server slave1:9094  --topic a
+kafka-console-producer.sh --bootstrap-server slave1:9094  --topic b
 #消费消息 --from-beginning
 kafka-console-consumer.sh --bootstrap-server slave1:9094  --topic a
 #删除topic
@@ -27,9 +27,9 @@ docker run -d --privileged=true -itd -v /sys/fs/cgroup:/sys/fs/cgroup  --net net
 1重新设置/etc/hosts
 mynode_init.sh
 2开启zk
-myzkServer.sh
+myzkServer.sh start
 3开启kafka
-mykafka.sh
+mykafka.sh start
 4开启hdfs注意是在master上执行下面的命令
 start-dfs.sh
 5在slaver1上执行下面的命令
@@ -52,3 +52,7 @@ cd /opt/modules/redis7/bin
 ./redis-cli shutdown
 #链接客户端
 ./redis-cli -h 127.0.0.1 -p 6379
+
+10.启动flink的jar包
+#下面是前台启动，启动之后，可以关闭此界面
+flink run -m yarn-cluster -c com.pdn.fenliu.SideOutput flinkdemo-1.0-SNAPSHOT.jar

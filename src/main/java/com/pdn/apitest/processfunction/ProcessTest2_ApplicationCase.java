@@ -37,7 +37,7 @@ public class ProcessTest2_ApplicationCase {
     // 实现自定义处理函数，检测一段时间内的温度连续上升，输出报警
     public static class TempConsIncreWarning extends KeyedProcessFunction<Tuple, SensorReading, String> {
         // 定义私有属性，当前统计的时间间隔
-        private Integer interval;
+        private final Integer interval;
 
         public TempConsIncreWarning(Integer interval) {
             this.interval = interval;

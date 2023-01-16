@@ -19,7 +19,7 @@ import org.apache.flink.util.OutputTag;
 /**
  * @ClassName: ProcessTest3_SideOuptCase
  * @Description:
- * @Author: wushengran on 2020/11/11 11:32
+ * @Author: pdn on 2020/11/11 11:32
  * @Version: 1.0
  */
 public class ProcessTest3_SideOuptCase {

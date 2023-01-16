@@ -73,6 +73,7 @@ public class MapStateDistinctExample {
                 }
 
             }
+
         }).returns(Types.STRING);
 
 
