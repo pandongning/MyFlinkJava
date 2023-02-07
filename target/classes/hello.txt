@@ -1,9 +1,0 @@
-hello world
-hello flink
-hello spark
-hello scala
-how are you
-fine thank you
-and you
-
-sensor_3, 1599990795000,3

@@ -47,16 +47,54 @@ public class HourlyTipsSolution {
                 .keyBy(TaxiFare::getDriverId)
                 .timeWindow(Time.seconds(5))
                 .process(new AddTips());
+        hourlyTips.print("hourlyTips");
 
         SingleOutputStreamOperator<Tuple3<String, Float, Long>> hourlyMax = hourlyTips.timeWindowAll(Time.seconds(5))
                 .maxBy(1);
 
-        hourlyMax.print();
+        hourlyMax.print("hourlyMax");
 
         env.execute("HourlyTipsSolution");
 
 
     }
+
+    /**
+     * 输入数据
+     * sensor_1,1599990791000,1
+     * sensor_1,1599990791000,1.1
+     * sensor_1,1599990791000,1.2
+     * sensor_2,1599990791000,2
+     * sensor_2,1599990791000,2.1
+     * sensor_2,1599990791000,2.2
+     * sensor_2a,1599990791000,2.1
+     * sensor_2a,1599990791000,2.1
+     * sensor_2a,1599990791000,2.2
+     * sensor_3,1599990795000,3
+     * sensor_3,1599990795000,3.1
+     * sensor_3,1599990795000,3.2
+     * sensor_4,1599990796000,4
+     * sensor_4,1599990796000,4.1
+     * sensor_4,1599990796000,4.2
+     * sensor_5,1599990797000,5
+     * sensor_6,1599990798000,6
+     * sensor_7,1599990799000,7
+     * sensor_8,1599990801000,8
+     * sensor_9,1599990802000,9
+     * sensor_10,1599990803000,10
+     * sensor_11,1599990804000,11
+     * 输出数据
+     * hourlyTips:2> (sensor_1,3.3,1599990795000)
+     * hourlyTips:3> (sensor_4,12.3,1599990800000)
+     * hourlyTips:1> (sensor_2,6.3,1599990795000)
+     * hourlyTips:3> (sensor_7,7.0,1599990800000)
+     * hourlyTips:2> (sensor_5,5.0,1599990800000)
+     * hourlyTips:1> (sensor_2a,6.3999996,1599990795000)
+     * hourlyTips:2> (sensor_6,6.0,1599990800000)
+     * hourlyTips:1> (sensor_3,9.3,1599990800000)
+     * hourlyMax:1> (sensor_2a,6.3999996,1599990795000)
+     * hourlyMax:2> (sensor_4,12.3,1599990800000)
+     */
 
     static class maxHourTips extends ProcessAllWindowFunction<Tuple3<String,Float,Long>,Tuple3<String,Float,Long>,TimeWindow>{
 
