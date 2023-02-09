@@ -48,6 +48,15 @@ public class ValueStateDistinct {
         KeyedStream<Tuple2<String, String>, String> keyedStream = map.keyBy(x -> x.f0);
 
         SingleOutputStreamOperator<String> quchong = keyedStream.flatMap(new RichFlatMapFunction<Tuple2<String, String>, String>() {
+        /**
+        此处则有一个十分重要的知识点，对于keyBy之后的算子到底有多少并行度。
+        假如我们的任务的并行度为3，则此处的flatMap会有3个实例。则下面的open函数会执行三次。
+        注意虽然此处的open函数只会执行三次，
+        但是在最后实际执行的时候，对于里面的的状态变量ValueState。却是不同的key在执行的时候会初始化自己该key对应的ValueState。而不是该三个flatMap。对应三个ValueState。
+        所以该任务是不同的key，会创建这个key自己对应的flatMap实例。每个不同的key对应的状态ValueState是不同的.
+        然后当相同的key再次来临的时候，其会进入到这个key自己的latMap实例进行计算
+        */
+
             ValueState<Boolean> keyHasBeenSeen;
 
             //           每个算字都会执行一次，比如并行度为3，则此时会执行3次

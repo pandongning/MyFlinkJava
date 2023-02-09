@@ -28,9 +28,9 @@ public class ExecutionEnvironmentUtils {
     private static final Time DELAY_BETWEEN_ATTEMPTS = Time.of(30, TimeUnit.SECONDS);
     /**
      * 每隔10min做一次ck 「600000」
-     * 此处为了测试，设置为3min 「120000」
+     * 此处为了测试，设置为5s 「5000」
      */
-    private static final int CHECKPOINT_INTERVAL = 180000;
+    private static final int CHECKPOINT_INTERVAL = 10000;
 
     /**
      * checkpoint 超时时长 5min 「30000」
@@ -53,18 +53,22 @@ public class ExecutionEnvironmentUtils {
         env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime);
 
 //        ck的设置
-//        env.enableCheckpointing(CHECKPOINT_INTERVAL);
-//        env.getCheckpointConfig().setCheckpointingMode(CheckpointingMode.EXACTLY_ONCE);
-//        env.getCheckpointConfig().enableExternalizedCheckpoints(CheckpointConfig.ExternalizedCheckpointCleanup.RETAIN_ON_CANCELLATION);
-//        env.getCheckpointConfig().setCheckpointTimeout(CHECKPOINT_TIMEOUT);
-//        env.getCheckpointConfig().setMinPauseBetweenCheckpoints(MIN_PAUSE_CHECKPOINT_INTERVAL);
-//        env.getCheckpointConfig().setMaxConcurrentCheckpoints(MAX_CONCURRENT_CHECKPOINTS);
+        env.enableCheckpointing(CHECKPOINT_INTERVAL);
+        env.getCheckpointConfig().setCheckpointingMode(CheckpointingMode.EXACTLY_ONCE);
+        env.getCheckpointConfig().enableExternalizedCheckpoints(CheckpointConfig.ExternalizedCheckpointCleanup.RETAIN_ON_CANCELLATION);
+        env.getCheckpointConfig().setCheckpointTimeout(CHECKPOINT_TIMEOUT);
+        env.getCheckpointConfig().setMinPauseBetweenCheckpoints(MIN_PAUSE_CHECKPOINT_INTERVAL);
+//        并发 checkpoint 的数目: 默认情况下，在上一个 checkpoint 未完成（失败或者成功）的情况下，系统不会触发另一个 checkpoint。这确保了拓扑不会在 checkpoint 上花费太多时间，从而影响正常的处理流程。 不过允许多个 checkpoint 并行进行是可行的，对于有确定的处理延迟（例如某方法所调用比较耗时的外部服务），但是仍然想进行频繁的 checkpoint 去最小化故障后重跑的 pipelines 来说，是有意义的。
+//该选项不能和 “checkpoints 间的最小时间"同时使用。
+        env.getCheckpointConfig().setMaxConcurrentCheckpoints(MAX_CONCURRENT_CHECKPOINTS);
 //        设置ck允许失败的次数
+//         允许两个连续的 checkpoint 错误
+        env.getCheckpointConfig().setTolerableCheckpointFailureNumber(2);
 
 
-        //        设置ck的StateBackend
+//           //     设置ck的StateBackend
 //        FsStateBackend fsStateBackend = new FsStateBackend("hdfs://localhost:9000/flink/file/checkpoints");
-//        如果在idea本地配置的存储路径是hdfs，而且集群在docker里面，则此时是不能在本地测试的，因为此时的时候需要很多的端口
+//       // 如果在idea本地配置的存储路径是hdfs，而且集群在docker里面，则此时是不能在本地测试的，因为此时的时候需要很多的端口
 //        RocksDBStateBackend rocksDBStateBackend = new RocksDBStateBackend("hdfs://localhost:9000/flink/file/checkpoints/rocksDB");
 //        MemoryStateBackend hashMapStateBackend = new MemoryStateBackend();
 //        env.setStateBackend(rocksDBStateBackend);
@@ -84,11 +88,11 @@ public class ExecutionEnvironmentUtils {
          *
          * 下面的意思是尝试重启三次，每次的间隔为30s。如果重启3次仍然失败。则判定该任务失败
          */
-        env.setRestartStrategy(RestartStrategies.fixedDelayRestart(
-                RESTART_ATTEMPTS, // 尝试重启的次数.超过这个次数则判定任务失败。
-                DELAY_BETWEEN_ATTEMPTS) // 每次重启之间的时间间隔
-        );
-        env.setParallelism(3);
+//        env.setRestartStrategy(RestartStrategies.fixedDelayRestart(
+//                RESTART_ATTEMPTS, // 尝试重启的次数.超过这个次数则判定任务失败。
+//                DELAY_BETWEEN_ATTEMPTS) // 每次重启之间的时间间隔
+//        );
+//        env.setParallelism(3);
 
         return env;
     }

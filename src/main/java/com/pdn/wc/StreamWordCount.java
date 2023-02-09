@@ -8,6 +8,7 @@ package com.pdn.wc;/**
  * Created by wushengran on 2020/11/6 11:48
  */
 
+import com.pdn.apitest.utils.ExecutionEnvironmentUtils;
 import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.api.java.utils.ParameterTool;
 import org.apache.flink.streaming.api.datastream.DataStream;
@@ -22,7 +23,8 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 public class StreamWordCount {
     public static void main(String[] args) throws Exception{
         // 创建流处理执行环境
-        StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+//        StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+        StreamExecutionEnvironment env = ExecutionEnvironmentUtils.getExecutionEnvironment();
 //        env.setParallelism(1);
 //        env.disableOperatorChaining();
 
@@ -35,6 +37,7 @@ public class StreamWordCount {
         ParameterTool parameterTool = ParameterTool.fromArgs(args);
         String host = parameterTool.get("host");
         int port = parameterTool.getInt("port");
+
 
         // 从socket文本流读取数据
         DataStream<String> inputDataStream = env.socketTextStream(host, port);
